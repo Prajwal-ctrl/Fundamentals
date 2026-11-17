@@ -4,7 +4,7 @@ A practical repository for strengthening software engineering fundamentals throu
 
 ## Learning approach
 
-- [Learning Operating System](LEARNING-OPERATING-SYSTEM.md) — learn in bounded steps, build early, use a curiosity parking lot, and ship evidence of capability.
+- [Learning Operating System](LEARNING-OPERATING-SYSTEM.md) — learn in bounded steps, build early, use a curiosity parking lot, and ship evidence of capability.\n- [Engineering Workflow](ENGINEERING-WORKFLOW.md) — turn requirements into planned, tested, reviewable code and commits.
 - [Deep-Dive template](templates/Deep-Dive.md) — capture the problem, mental model, internals, trade-offs, connections, and questions to revisit.
 - [Implementation template](templates/Implementation.md) — define a small working outcome, implement, test, debug, document, and ship.
 
