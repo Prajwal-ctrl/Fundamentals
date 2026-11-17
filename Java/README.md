@@ -111,3 +111,76 @@ For each topic, add a dedicated Markdown file with:
 8. Official references
 
 Use Java 17 as the initial baseline unless a topic explicitly compares versions.
+
+---
+
+## 🔴 Interview-focused additions for a 2–3 YOE backend developer
+
+The topics below are explicitly added because a developer at this experience level is expected to reason about behavior, edge cases and production impact—not only recite definitions. The red marker 🔴 identifies interview-critical additions or deeper coverage that was missing from the initial roadmap.
+
+### 🔴 12. Complexity analysis and coding fundamentals
+- Big-O time and space complexity; best, average and worst cases
+- Arrays, strings, two pointers, sliding window and prefix sums
+- Hashing and frequency maps
+- Sorting, binary search and comparator-based ordering
+- Stack, queue, deque and heap / priority queue
+- Recursion and basic backtracking
+- Common patterns: grouping, deduplication, top-K, intervals
+- Choosing a data structure from operation requirements
+- Explain complexity and edge cases while coding
+
+### 🔴 13. Modern Java features interviewers may expect
+- Java 8 baseline: lambdas, streams, Optional, default methods, java.time
+- Java 11: local-variable syntax in lambda parameters, modern APIs and runtime awareness
+- Java 17: records, sealed classes, pattern matching for instanceof, text blocks
+- Java 21: virtual threads, record patterns, pattern matching for switch, sequenced collections
+- Java 25: module import declarations, compact source files and instance main methods, flexible constructor bodies; recognize preview features and distinguish preview from final
+- LTS releases and class-file compatibility: 17, 21 and 25
+- Decide whether a feature is appropriate for an existing production codebase
+
+### 🔴 14. API, I/O and application-level Java
+- java.time: Instant, LocalDate, LocalDateTime, ZonedDateTime and time-zone mistakes
+- Files, streams, buffered I/O and resource management
+- Serialization basics and why native Java serialization needs caution
+- BigDecimal for money; scale, rounding and precision
+- Enum design and EnumMap / EnumSet
+- Defensive copying and immutable value objects
+- Basic networking and HTTP client awareness
+
+### 🔴 15. Deeper concurrency and runtime reasoning
+- Java Memory Model and happens-before
+- Atomicity, visibility and ordering
+- synchronized vs volatile vs atomic classes
+- ReentrantLock, read-write locks and optimistic reads
+- ConcurrentHashMap internals at a conceptual level
+- Executor sizing, bounded queues, rejection policies and shutdown
+- CompletableFuture composition, exception handling and blocking pitfalls
+- Virtual threads: suitable workloads, pinning awareness and limits
+- ThreadLocal risks in pooled threads
+- Deadlock diagnosis, thread dumps and Java Flight Recorder basics
+
+### 🔴 16. Interview coding and explanation standard
+For every coding exercise, be ready to:
+1. Clarify input constraints and expected output.
+2. Explain a straightforward solution first.
+3. Improve it using the right data structure or algorithm.
+4. State time and space complexity.
+5. Test null/empty input, duplicates, boundaries and large input.
+6. Explain readability and maintainability trade-offs.
+
+## Interview questions and practical drills
+
+See [Interview-Questions.md](Interview-Questions.md). It contains a question bank for Core Java, collections, streams, concurrency, JVM, modern Java and coding exercises.
+
+## Version and market-awareness note — 17 November 2026
+
+- Keep **Java 17** as the first implementation baseline so foundational concepts remain clear.
+- Be able to discuss **Java 21** features, especially virtual threads, because it is an LTS release and relevant to modern backend services.
+- Know what changed in **Java 25**, also an LTS release. Learn stable features first; identify preview/incubator features rather than presenting them as universally production-ready.
+- Interviewers may ask about Java 8/11/17 in existing enterprise codebases even when newer LTS releases exist. Always ask which version the target project uses.
+
+Official references:
+- [Java SE support roadmap](https://www.oracle.com/java/technologies/java-se-support-roadmap.html)
+- [Java 25 release](https://www.oracle.com/news/announcement/oracle-releases-java-25-2025-09-16/)
+- [Java 21 documentation](https://docs.oracle.com/en/java/javase/21/)
+- [Java 25 documentation](https://docs.oracle.com/en/java/javase/25/)
